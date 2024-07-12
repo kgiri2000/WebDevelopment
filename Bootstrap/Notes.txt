@@ -1,0 +1,17 @@
+CSS framework that contains premade CSS files which can be included in any project.
+    - 12 columns layout system build on the top flexbox which helps in create responsive website.
+
+Problem:
+    - Class blow where lots of styling is done in the CSS Class
+    - lack of customization
+
+How to use Bootstrap?
+
+Include via Content Delivery Network(CDN)
+
+12 column layout system
+Sized column as col-2, col-4, col-6
+|       |               |                       |
+
+Bootstrap Breakpoints
+    - Six default Breakpoints

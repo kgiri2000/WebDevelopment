@@ -1,0 +1,134 @@
+
+#CSS Display
+CSS display mainly talks about the three ways in which the object can be placed in the screen.
+1. Block : want to occupy the full block
+2. Inline : only the text
+3. inline-block : will allow other block to its left or right.
+
+<style>
+.red {
+    display : block or inline or inline-block;
+    width: 200px;
+    height: 200px;
+    background-color: red;
+}
+</style>
+
+<body>
+<p class = "red" > Red Paragraph </p>
+</body>
+
+#CSS Float
+
+Display works best when some components are to be place in three separate section; however,
+when we have to put the image or graphics inbetween the text then we have to use float.
+We have to give the float property to the image.
+By deafult, in html both image and text has block display property.
+Use clear: left or right to clear the floating property for any other elements.
+
+For image:
+
+img{
+    float: left or right;
+}
+
+In modern web development, we don't use float instead we have flexbox, grid or bootstrap
+
+
+#Create Responsive Websites
+
+How to make a website scalable in either big screen or the mobile phone screen.
+For example, we might want to hide or collapse the menu bar when the screen gets smaller 
+and come back to normal when the screen gets bigger.
+Basically, how to create the dynamic website.
+We can do this by 4 differnet ways:
+    1. Media Queries
+    2. CSS grid
+    3. CSS flexbox
+    4. External Frameworks like bootstrap
+
+
+1. Media Queries
+    @media (max-width: 600 px){
+        /*CSS for screens below or equal to 600 px*/
+    }
+2. CSS grid
+
+<div class = "grid-container">
+    <div class = "first card" </div>
+    <div class = "card" </div>
+    <div class = "card" </div>
+    <div class = "card" </div>
+    <div class = "card" </div>
+</div>
+
+
+.grid-container {
+    #Using Css grid option
+    display : grid;
+    grid-template-colums: 1fr, 1 fr  # making 2 equal fraction component in the screeen
+    grid-template-rows: 100px, 200px, 200px;
+    gap: 30px;
+}
+    .first{
+        grid-colum: span 2;  #Makes two column   
+    }
+    .card{
+        background-color: blue;
+    }
+
+3. CSS flexbox
+- Help to create 1D layout
+
+E.g
+
+#Parent container
+<div class = "flex-container">
+    <div class = "first-card"></div>
+    <div class = "second card"> </div>
+    <div class = "card" </div>
+    <div class = "card> </div>
+    
+</div>
+
+CSS
+
+.flex-container {
+    display: flex;  #CSS flex system
+}
+
+#For every container class
+
+.card{
+    background : blue;
+    border : 30px;
+    height: 199px;
+    flex: 1;  # Make sure that all tbhe card class has the same width    
+}
+
+.first{
+    flex: 2; # Makes the width double of original for the  first card class
+}
+
+.second{
+    flex: 0.5;
+}
+
+Example senario: if you want to build the dynamic website where the ratio of header(navigation bar),
+body and footer are of same ratio even in differnet screen, then we can use flex to keep the
+constant ratio by setting 
+.header{
+    flex: 1;
+}
+.body{
+    flex: 3
+}
+.footer{
+    flex:1;
+}
+
+ 4. Bootstrap Frameworks
+ -Have 12 sections
+ -Divide the section into 12 section so it is responsive for the dynamic Websites
+
+ 
