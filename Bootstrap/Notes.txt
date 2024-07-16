@@ -14,4 +14,26 @@ Sized column as col-2, col-4, col-6
 |       |               |                       |
 
 Bootstrap Breakpoints
-    - Six default Breakpoints
+    - Six default Breakpoints, sometimes referred as grid tiers
+    - Extra small, small(sm), Medium(md), Large(lg), Extra large(xl), Extra extra large(xxl). 
+    - col-sm-2 ( >= 576, <= 768 )
+    - e.g, col-sm-2, col-sm-4, col-sm-6 , for pixel < 576, each div will act as col.
+    - Multiple Breakpoints: col-sm-12, col-md-8, col-lg-4 : on larger device, take 4/12, medium : 8/12 and for small : 12/12
+    - 
+
+Bootstrap containers
+    - By defiining the containers, we are defining differents sizes for different screens.
+    - .container, .container-sm, ... , .container-fluid(edge to edge behaviours)
+    - Sized columns divs e.g, col-2, col-4, col-6
+
+
+Bootstrap Components
+    - Prebuild Components like buttons, cards which can be added by just adding css component in the html.
+
+Spacing
+
+    - Notation:
+        m and p for margin and padding
+        b,t,x,y : bottom, top ,...
+        e.g: mt-2, means margin at top by 2
+
