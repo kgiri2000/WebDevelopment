@@ -42,9 +42,10 @@ Document Object Model(DOM)
     change any of those properties.
     We can also use Javascript to run the methods as they associated with objects.
     Button:
-        innerHTML
-        style
-        firstElementChild
+        Properties:
+            innerHTML
+            style
+            firstElementChild
         Methods:
             click()
             appendChild()
@@ -77,5 +78,15 @@ document.querySelector("button").classList.toggle("invisible");
 
 
 #TEXT Manipulation and text content property
-.innerHTML 
-.textContent
+.innerHTML  : will give all the element inside the h1
+.querySelector("h1).innerHTML = "<em> Good Bye <em>"
+.textContent : will only give the text 
+
+#Manipulating HTML attributes
+document.querySelector("a").attributes;
+
+document.querySelector("a").getAttribute("href);
+
+changing the attributes:
+document.querySelector("a").setAttribute("href", "https://www.bing.com);
+
