@@ -1,0 +1,81 @@
+Three ways of having css files in html
+    1. Internal
+    2. Inline
+    3. External
+Similarly, we can include Javascript using same format.
+
+    1. Inline   
+    We can use Inline inside the body tag using onload
+    <body onload = "alert('Hello World');">
+    Disadvantages:
+        1. Not modular
+        2. Hard to debug
+        3. Not a good practice.
+    
+    2. Internal
+    Next way to encorporate Javascript by using <script> tag.
+    <script type = "text/javascrit">
+    alert("Hello");
+    </script>
+
+    3. External
+    <script src = "index.js"> </script>
+Location of place matters because javascript works on html elements and if the script
+is located above the html element or head, javascript won't be able to change anything
+
+So, it is better to place at the end of body.
+
+
+Document Object Model(DOM)
+    - to make the website interactive
+    - All the elements of the html are converted into objects and are mapped out in Three
+      structure which is known as DOM model.
+    - We can use chrome console to find the document model.
+    In console:
+    > document;
+    > var heading = document.firstElementChild.lastElementChild.firstElementChild;
+    > heading.innerHTML =  "Good Bye";
+    > heading.style.color = "red";
+    > document.querySelector("input").click();
+
+    All the html elements is objects and has properties and methods and Javascript change
+    change any of those properties.
+    We can also use Javascript to run the methods as they associated with objects.
+    Button:
+        innerHTML
+        style
+        firstElementChild
+        Methods:
+            click()
+            appendChild()
+            setAttribute()
+
+
+#Selecting HTML Elements with Javascript
+
+    1. document.querySelector(".btn") -- Class or ("h1") or ("#title) -- id
+        document.querySelector("li a") will give the anchor tag element
+        document.querySelector("li.item) will give first list
+        document.querySelectorAll("#list .item")[2].style.color = "blue"
+    2. document.getElementsByTagName("..")[1].style.color = "purple"
+    3. document.getElementsByClassName("btn")[0].style.color = "purple"
+    4. document.getElementbById("title").innerHTML = "Good Bye"
+
+#Camel casing
+    - value has to be represented using string
+    - .nav-item  is written as navItem
+    - document.querySelector(".btn").style.backGroundColor = "yellow";
+
+#Adding another class to the query selector to make the website more dynamic
+
+document.querySelector("button").classList.add("invisible");
+
+document.querySelector("button").classList.remove("invisible");
+
+document.querySelector("button").classList.toggle("invisible");
+
+
+
+#TEXT Manipulation and text content property
+.innerHTML 
+.textContent
