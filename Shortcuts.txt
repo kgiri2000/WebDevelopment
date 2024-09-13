@@ -1,0 +1,38 @@
+git status
+git add .
+git commit -m "Message"
+git pull
+git push
+
+# adding branch
+
+git branch branch-name
+
+#Switch to new branch
+
+git checkout brach-name
+
+#Combined
+git checkout -b branch-name
+
+#Push New branch
+
+git push -u origin branch-name
+
+#Delete
+git branch -d branch-name
+
+#View history
+git log
+
+#Revert a commit
+
+git revert commit-hash
+
+#Reset to previous commit
+
+git reset --hard commit-hash
+
+#Stash changes
+
+git stash
