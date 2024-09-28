@@ -1,0 +1,16 @@
+An asynchronous event-driven Javascript runtime, Node.js is designed to build scalable network applications.
+V8 Engine -> Chromium Engine
+
+Javascript runtime: Made it possible for Javascript to run in local pc and server rather than only browsers.
+Asynchronous Event-driven: Javascript code doesn't have to run sequentially. 
+Back End for Machine Learning -> Python's BackEnd, Django and flask
+
+Node REPEL(Read Eval Print Loop): is a environment where user input are read(line by line) and evaluated, and then the results
+returned to the user.
+
+Ctrl + C to exit out of command line.
+
+Node to run the entire file and use it as a runtime environment.
+
+#QR Code Generator
+Two NPM packages: inquierer, qr-image

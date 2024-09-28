@@ -1,0 +1,19 @@
+Server, Applications and Databases
+-> Listen incoming request.
+-> Logic that runs on the server. Respond to Requests. 
+->Store user data.
+
+Web Page:
+    They only have Front end embedded.
+
+Web Apps:
+    It should be able to do something rather than just showing the webpages.
+
+Back End Technologies:
+Front-end                           Back End
+    HTML, CSS, JS                           Java, Ruby, PHP, C#, Python, Javascript
+    Framework:                      Framework:                 
+        React                       Rails, ASP.NET, dj, flask, node js
+        Angular 
+        Vue
+

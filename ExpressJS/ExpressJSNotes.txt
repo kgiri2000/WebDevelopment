@@ -1,0 +1,92 @@
+Express Framework that is built on the top of Node that going to help us create backend with ease.
+Web Framework:
+Node.js -> 46%
+React.js -> 445
+jQuery -> 29%
+Express -> 23%
+
+We can choose different languages and Framework for backend.
+Node.js is not actually framework, rather it is runtime environment(enables the coe to run in the computer).
+
+Express is the framework for the Javascript which helps to create backend for the websites.
+
+Node can do bunch of things even the node is helping to run vscode in the computer.
+
+So Express is specialiazed in building the backend with features like
+    i. Readability
+    ii. Less Code
+    iii. MiddleWare
+
+
+#Creating our First Server with Express
+Backend: Applications,Server and Database
+Application running in server computer
+
+Client side and Server side
+
+Making Server or backend using 
+    Express + Node
+    Local computer as a server.
+
+Six step to create Express Server
+
+    1. Create the directory
+    2. Create index.js file
+    3. Initialise NPM
+    init npm -y
+    4. Install the Express package
+    npm i express
+    5. Write Server Application in index.js
+    6. Start server
+
+import express from "express";
+const app = express();
+
+app.listen(3000, () => {
+    //callback function after listining to the server
+    console.log("Server running on port 3000);
+});
+3000 is the port which is the location of the server.
+
+Localhost : when we don't have online server, we make it locally.
+https://localhost:3000
+
+Ports: Bucnh of doors on the server to access the server. We are listening to the port 3000.
+Through that port it is ging to our computer.
+Pinter might have different door.
+
+We can find which port are listening:
+
+netstat -ano | findstr"LISTENING"
+
+
+HTTP : HyperText Transfer Protocol
+Language that allows computer to talk to each other in the internet.
+GET
+POST
+PUT
+PATCH
+DELETE
+
+GET: request resource from the server
+POST: Sending the resource to the server
+PUT: Replace resource
+PATCH: Patch up the resource
+DELETE: Delete the resource from Client to Server side
+
+When localhost:3000 is loaded we get,
+Cannot GET/ 
+because there is no any get function initialized on  the server side.
+We can fix this by setting up the get as 
+app.get("/", (req, res) =>){
+    res.send("Hello World);
+}
+
+Nodemon:
+npm i -g nodemon
+Automaticall refresh the server when there is change in the file
+nodemon index.js
+/Endpoints
+Where the localhost goes
+
+
