@@ -12,5 +12,27 @@ Ctrl + C to exit out of command line.
 
 Node to run the entire file and use it as a runtime environment.
 
-#QR Code Generator
-Two NPM packages: inquierer, qr-image
+Native Node Model:
+Native Models: modules that came pre bundled with the node. Ex. File System module
+
+Node Package Manager:
+place which collects all the modules, created by people of GitHub.
+community tool library.
+
+Its comes pre bundled with node.
+npm init
+
+package.json:
+It is way of representing our data, javascript object notation.
+Configuration file.
+Install npm package
+npm install <package_name>
+
+We have npm dependencies in package.json and whole module in our directory.
+
+ECMAScript Modules(ESM):
+How to get hold of package: CJS(common js) and ESM.
+To use ESM, we need to go to package.json and add
+"type" : "module"
+
+import xxx from module_name;
