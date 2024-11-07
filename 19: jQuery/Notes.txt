@@ -1,0 +1,59 @@
+JQuery 
+The Javascript library that will prevent our fingers from Breaking.
+John Resik
+
+document.querySelector("h1") = jQuery("h1") = $("h1")
+//How to incorporate jQuery
+CDN = Content Delivery Network
+Use Google CDN
+
+//Minification
+
+Converting the javascript or css to minified version to save size without using space and new line.
+
+//Selecting element using jQuery
+In Javascript, we use document.querySelector("h1");
+In jQuery, we use $("h1);
+We can also use $("button") to select all the button.
+
+We use .css method to get the property of the css element.
+Also,
+$("h1").addClass("big-title");
+$("h1").removeClass("big-title");
+
+//We can also use it to change the text inside the button
+$("h1").text("Bye")
+
+We can also use HTML or innerHTML
+$("h1).html(<em> BYE BYE);
+
+//Manipulating attributes like src, href
+$("img").attr("src");
+$("a").attr("href", "https://www.yahoo.com")
+
+//Adding event listener to jQuery
+$("h1").click(function(){
+    $("h1").css("color", "purple")
+
+});
+//We also have mouse over as well
+Adding and Removing Elements with jQuery
+$("h1").before(<button> Hello </button>)
+.after()
+.prepand()
+.append()
+
+//Animation using jQuery
+.hide()
+.show()
+.toggle()
+.fadeOut()
+.fadeIn()
+.fadeToggle()
+.slideUp()
+.slideDown()
+.slideToggle()
+//animate
+.animate({opacity: 0.5})
+Chaining the Animation
+.slideUp().slideDown().animate()
