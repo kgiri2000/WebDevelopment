@@ -1,3 +1,4 @@
+<<<<<<< HEAD:24: ExpressJS/ExpressJSNotes.txt
 Express Framework that is built on the top of Node that going to help us create backend with ease.
 Web Framework:
 Node.js -> 46%
@@ -90,3 +91,158 @@ nodemon index.js
 Where the localhost goes
 
 
+=======
+Express Framework that is built on the top of Node that going to help us create backend with ease.
+Web Framework:
+Node.js -> 46%
+React.js -> 445
+jQuery -> 29%
+Express -> 23%
+
+We can choose different languages and Framework for backend.
+Node.js is not actually framework, rather it is runtime environment(enables the coe to run in the computer).
+
+Express is the framework for the Javascript which helps to create backend for the websites.
+
+Node can do bunch of things even the node is helping to run vscode in the computer.
+
+So Express is specialized in building the backend with features like
+    i. Readability
+    ii. Less Code
+    iii. MiddleWare
+
+
+#Creating our First Server with Express
+Backend: Applications,Server and Database
+Application running in server computer
+
+Client side and Server side
+
+Making Server or backend using 
+    Express + Node
+    Local computer as a server.
+
+Six step to create Express Server
+
+    1. Create the directory
+    2. Create index.js file
+    3. Initialise NPM
+    init npm -y
+    4. Install the Express package
+    npm i express
+    5. Write Server Application in index.js
+    6. Start server
+
+import express from "express";
+const app = express();
+
+app.listen(3000, () => {
+    //callback function after listining to the server
+    console.log("Server running on port 3000);
+});
+3000 is the port which is the location of the server.
+
+Localhost : when we don't have online server, we make it locally.
+https://localhost:3000
+
+Ports: Bucnh of doors on the server to access the server. We are listening to the port 3000.
+Through that port it is ging to our computer.
+Pinter might have different door.
+
+We can find which port are listening:
+
+netstat -ano | findstr"LISTENING"
+
+
+HTTP : HyperText Transfer Protocol
+npm init -y
+Initializing node will create package.json 
+npm i express
+Initializing express will create package-lock.json
+//In order to use express
+We have to go to package.json and 
+"type" : "module"
+
+Language that allows computer to talk to each other in the internet.
+GET
+POST
+PUT
+PATCH
+DELETE
+
+GET: request resource from the server
+POST: Sending the resource to the server
+PUT: Replace resource
+PATCH: Patch up the resource
+DELETE: Delete the resource from Client to Server side
+
+When localhost:3000 is loaded we get,
+Cannot GET/ 
+because there is no any get function initialized on  the server side.
+We can fix this by setting up the get as 
+app.get("/", (req, res) =>){
+    res.send("Hello World);
+}
+
+Nodemon:
+npm i -g nodemon
+Automaticall refresh the server when there is change in the file
+nodemon index.js
+/Endpoints
+Where the localhost goes
+
+PostMan
+Making request
+
+404 Error: https standard response Code
+
+1. Information responses(100-199)
+2. Successful response(200-299)
+3. Redirection messages(300-399)
+4. Client error response( 400-499)
+5. Server error responses( 500 -599)
+
+Post -> sending request to the server.
+Example: sending form data to the server
+
+
+MiddleWare:
+When the request reaches the server, before it reaches to the 
+request handler, it is passed through the middle ware.
+Functions:
+    - Preprocess the request, which request handler to send
+    - Logging the request
+    - Authentication
+    - Errors the request
+
+most commonly used middleware:
+Body parser: 
+Parse incoming request bodies in middleware before your handlers,
+available under the req body property.
+<form action = "/login" method "POST>
+    <label></label>
+    <input></input>
+
+As we have seen different types of MiddleWare:
+i. Pre-Processing : Body-parser
+ii. Logging
+iii. Authentication
+iv. Error 
+
+Morgan //Logging MiddleWare
+Log the request that comes to the server
+For Example, if we try to request the homepage, then the get 
+will load the homepage with html file but before the get handler,
+morgan can add more detail like time, return code, browser, and 
+other detail.
+
+app.use(morgan("tiny"))
+
+Listening on port 3000
+GET / 200 5 - 2.636 ms
+
+
+
+Done with Express JS
+
+>>>>>>> 6cd76f5ad6e78dc3739ff70a94b58b034ef2bc79:ExpressJS/ExpressJSNotes.txt

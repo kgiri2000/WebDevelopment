@@ -1,4 +1,9 @@
 node_modules/
+<<<<<<< HEAD
 *.log
 .env
 .DS_Store
+=======
+package.json
+package-lock.json
+>>>>>>> 6cd76f5ad6e78dc3739ff70a94b58b034ef2bc79
